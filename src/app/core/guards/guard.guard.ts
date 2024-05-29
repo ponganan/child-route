@@ -14,5 +14,5 @@ export const guardGuard: CanActivateFn = (route, state) => {
 
 
 function isLoggedIn() {
-  return false;
+  return true;
 }

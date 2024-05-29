@@ -1,10 +1,24 @@
-<a routerLink="page1">Page 1</a> | <a routerLink="page2/33">Page 2</a>
+<div class="container">
+    <table>
+        <tr>
+            <td><a routerLink="page1">Page 1</a> | <a routerLink="page2/33">Page 2</a></td>
+        </tr>
+        <br>
+        <tr>
+            <td><button (click)="navigate()">Navigate to Page1</button></td>
+        </tr>
+        <br>
+        <tr>
+            <td><button (click)="navigateToPage2()">Navigete to Page2</button></td>
+        </tr>
+    </table>
+</div>
 <br>
 <br>
-<button (click)="navigate()">Navigate to Page1</button>
+
 <div></div>
 <br>
-<button (click)="navigateToPage2()">Navigete to Page2</button>
+
 <div></div>
 <br>
 <button (click)="navigateToPage2WithQueryParams()">Navigete to Page2 With Query Params</button>
@@ -20,4 +34,9 @@
 <div></div>
 <br>
 <a routerLink="page2/8888" [queryParams]="{name: 'Joey', age: '41'}">Page2 with queryParams</a>
+<br>
+<br>
+
+
+<child-route-gift></child-route-gift>
 <router-outlet></router-outlet>

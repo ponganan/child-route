@@ -8,6 +8,7 @@ import { ChildComponent } from './child/child.component';
 import { Page1Component } from './page1/page1.component';
 import { Page2Component } from './page2/page2.component';
 import { LoginComponent } from './login/login.component';
+import { GiftComponent } from './gift/gift.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { LoginComponent } from './login/login.component';
     ChildComponent,
     Page1Component,
     Page2Component,
-    LoginComponent
+    LoginComponent,
+    GiftComponent
   ],
   imports: [
     BrowserModule,
